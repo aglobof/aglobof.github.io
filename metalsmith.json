@@ -1,0 +1,12 @@
+{
+  "metadata": { 
+    "title": "Glob",
+    "description": "The Globs you've always been looking for"
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-templates": {
+      "engine": "jade"
+    }
+  }
+}
