@@ -1,0 +1,27 @@
+{
+  "name": "sass-defaults",
+  "version": "0.1.0",
+  "homepage": "aglobof.github.io",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "A glob of Sass defaults",
+  "keywords": [
+    "sass",
+    "oocss",
+    "css",
+    "defaults"
+  ],
+  "license": "MIT",
+  "ignore": [],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "67f152e46302510e7ab5ff2e91a719c3f351ddae"
+  },
+  "_source": "git://github.com/aglobof/sass-defaults.git",
+  "_target": "~0.1.0",
+  "_originalSource": "aglobof-sass-defaults",
+  "_direct": true
+}
