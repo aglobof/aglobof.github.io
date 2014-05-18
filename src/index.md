@@ -1,6 +1,4 @@
 ---
-title: Glob
 template: index.jade
+title: Glob
 ---
-
-Hello.
