@@ -1,5 +1,6 @@
 {
   "source": "./src",
+  "destination": "./",
   "plugins": {
     "metalsmith-markdown": {},
     "metalsmith-templates": {
