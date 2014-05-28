@@ -14,5 +14,8 @@
     "src/lib",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "aglobof-sass-defaults": "~0.1.0"
+  }
 }
