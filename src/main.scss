@@ -4,3 +4,24 @@
 // Import Resets
 @import "../lib/aglobof-sass-defaults/normalize";
 @import "../lib/aglobof-sass-defaults/box";
+
+// Design prototyping
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.nav--background {
+  position: fixed;
+  background: #f0f5f7;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 70px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
