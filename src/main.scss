@@ -6,22 +6,66 @@
 @import "../lib/aglobof-sass-defaults/box";
 
 // Design prototyping
-.container {
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: center;
+$oswald: "Oswald", sans-serif;
+$mono:  "PT Mono";
+
+.wrapper {
+  padding-left: 250px;
 }
 
-.nav--background {
+.sidenav {
   position: fixed;
-  background: #f0f5f7;
+  background: #f7f7f7;
   top: 0;
   left: 0;
-  height: 100%;
-  padding: 70px;
+  bottom: 0;
+  width: 250px;
+  padding: 65px;
+}
+
+.nav {
+  .nav--title {
+    font-family: $oswald;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .nav--item {
+    font-family: $mono;
+    color: #777;
+    text-decoration: none;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-top: 1em;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  padding-top: 40px;
+  h1 {
+    font-family: $oswald;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-family: $mono;
+    color: #cfcfcf;
+  }
+  .logo {
+    width: 100px;
   }
 }
