@@ -9,6 +9,13 @@
 $oswald: "Oswald", sans-serif;
 $mono:  "PT Mono";
 
+// Breakpoint
+@mixin screen-medium {
+  @media screen and (min-width: 700px) {
+    @content;
+  }
+}
+
 .wrapper {
   padding-left: 250px;
 }
@@ -19,8 +26,13 @@ $mono:  "PT Mono";
   top: 0;
   left: 0;
   bottom: 0;
-  width: 250px;
-  padding: 65px;
+  width: 1800px;
+  padding: 40px 20px;
+
+  @include screen-medium {
+    width: 250px;
+    padding: 65px;
+  }
 }
 
 .nav {
