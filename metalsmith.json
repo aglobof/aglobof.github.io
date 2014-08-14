@@ -6,7 +6,8 @@
     "metalsmith-templates": {
       "engine": "jade"
     },
-    "metalsmith-sass": {}
+    "metalsmith-sass": {},
+    "metalsmith-watch": {}
   }
 }
 
