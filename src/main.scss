@@ -9,6 +9,18 @@
 $oswald: "Oswald", sans-serif;
 $mono:  "PT Mono";
 
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: #9B3CF9;
+  text-decoration: none;
+  &:hover {
+    color: darken(#9B3CF9, 15%);
+  }
+}
+
 // Breakpoint
 @mixin screen-medium {
   @media screen and (min-width: 700px) {
@@ -67,7 +79,7 @@ $mono:  "PT Mono";
 
 .header {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
   h1 {
     font-family: $oswald;
     text-transform: uppercase;
@@ -76,8 +88,15 @@ $mono:  "PT Mono";
   h3 {
     font-family: $mono;
     color: #cfcfcf;
+    padding-bottom: 40px;
   }
   .logo {
     width: 100px;
   }
+}
+
+pre {
+  background: #f3f3f3;
+  font-size: 14px;
+  padding: 10px;
 }
