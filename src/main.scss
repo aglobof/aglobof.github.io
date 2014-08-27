@@ -8,9 +8,10 @@
 // Design prototyping
 $oswald: "Oswald", sans-serif;
 $mono:  "PT Mono";
+$sans: "PT Sans";
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: $sans;
 }
 
 a {
@@ -23,6 +24,9 @@ a {
 
 .wrapper {
   padding-left: 250px;
+  @media screen and (max-width: 900px) {
+    padding-left: 0;
+  }
 }
 
 .sidenav {
@@ -33,7 +37,7 @@ a {
   bottom: 0;
   width: 260px;
   padding: 40px;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
@@ -51,6 +55,9 @@ a {
     font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    &:hover {
+     color: darken(#777, 20%); 
+    }
   }
   ul {
     list-style: none;
@@ -66,6 +73,7 @@ a {
 .inner {
   margin: 0 auto;
   max-width: 600px;
+  padding: 0 20px;
 }
 
 .header {
