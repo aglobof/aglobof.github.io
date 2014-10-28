@@ -1,0 +1,28 @@
+{
+  "name": "aglobof-sass",
+  "version": "0.0.1",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "Glob all the sass packages",
+  "keywords": [
+    "scss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "aglobof-sass.resets": "~0.0.1",
+    "aglobof-sass.grid": "~0.1.1",
+    "aglobof-sass.animations": "~0.0.2"
+  },
+  "homepage": "https://github.com/aglobof/sass",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "3258df36e2ea01ccdbd2f9654c439866b2461c3c"
+  },
+  "_source": "git://github.com/aglobof/sass.git",
+  "_target": "~0.0.1",
+  "_originalSource": "aglobof-sass",
+  "_direct": true
+}

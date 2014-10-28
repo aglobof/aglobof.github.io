@@ -1,21 +1,14 @@
 {
-  "name": "aglobof.github.io",
+  "name": "glob",
   "version": "0.0.0",
-  "homepage": "https://github.com/aglobof/aglobof.github.io",
+  "description": "bower managed packages of sass",
+  "homepage": "aglobof.github.io",
   "authors": [
     "Robb Schiller <robbschiller@gmail.com>"
   ],
-  "description": "Site/Docs for Glob",
   "license": "MIT",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "src/lib",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "aglobof-sass-defaults": "~0.1.0"
+    "aglobof-sass": "~0.0.1"
   }
 }
