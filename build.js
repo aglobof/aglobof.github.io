@@ -4,15 +4,9 @@ var Metalsmith = require('metalsmith');
 var templates = require('metalsmith-templates');
 var sass = require('metalsmith-sass');
 var markdown = require('metalsmith-markdown');
+var ignore = require('metalsmith-ignore');
 var watch = require('metalsmith-watch');
-var connect = require('connect');
-var serve = require('serve-static');
-
-var isDev = false
-
-process.argv.forEach(function(val, index, array) {
-  if (val === 'dev') isDev = true
-})
+var serve = require('metalsmith-serve');
 
 var metalsmith = Metalsmith(__dirname)
   .use(sass({
@@ -28,21 +22,16 @@ var metalsmith = Metalsmith(__dirname)
       footer: "partials/footer"
     }
   }))
-
-if (isDev) {
-  metalsmith
-    .use(watch())
-}
-
-metalsmith
+  .use(ignore([
+    "templates/**/*",
+    "sass/**/*",
+    "sass/**/.bower.json",
+    "sass/**/.gitignore"
+  ]))
+  .use(watch())
+  .use(serve({
+    port: '8000' 
+  }))
   .build(function(err){
     if (err) throw err;
   });
-
-if (isDev) {
-  var app = connect()
-  app.use(serve(__dirname + '/build'));
-  app.listen(8000, function() {
-    console.log('running on port 8000')
-  });
-}
