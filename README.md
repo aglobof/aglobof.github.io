@@ -1,7 +1,13 @@
 # aglobof.github.io
 
-Development
+## Install
+
+```shell
+$ bower install
+```
+
+## Build
 
 ```
-$ make
+$ npm run dev
 ```
