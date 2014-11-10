@@ -3,30 +3,20 @@
 
 // Import Deps
 // --------------------------------------------------
-// Prototyping some layout. Not sure if I want to
-// come back and apply some SCP layout to this...
+// Prototyping some glob stuff here... 
 // --------------------------------------------------
-
-// Resets
-@import "lib/aglobof-sass.resets/normalize";
-@import "lib/aglobof-sass.resets/box";
-
-// Grid
-$grid--item--break: 768px;
-$grid-gutter__width: 20px;
-@import "lib/aglobof-sass.grid/grid";
-
-// Animations
-@import "lib/aglobof-sass.animations/animate";
+$grid-break: 768px;
+$grid-gutter-width: 20px;
+@import "lib/aglobof-sass/glob";
 
 // Prototype some design
 // --------------------------------------------------
 // Just trowing some design prototypes under here
 // while some other stuff gets sorted out. Current
 // comp ideas - http://cl.ly/YGq7
-// --------------------------------------------------
+// --------------------------------------------------A
 
-// colors
+// Colors
 $purple: #9923FF;
 $white: #FFFFFF;
 $black: #3D3D3D;
@@ -37,6 +27,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   color: $black;
+  a {
+    @include transition(color, 0.5s);
+  }
 }
 
 .header {
@@ -86,17 +79,6 @@ body {
 
 .subtitle {
   font-size: 1.25rem;
-}
-
-@mixin list-clear-inline {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline-block;
-    }
-  }
 }
 
 .nav {

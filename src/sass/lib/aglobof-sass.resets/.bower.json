@@ -1,6 +1,6 @@
 {
   "name": "aglobof-sass.resets",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "homepage": "aglobof.github.io",
   "authors": [
     "Robb Schiller <robbschiller@gmail.com>"
@@ -11,13 +11,13 @@
     "glob"
   ],
   "license": "MIT",
-  "_release": "0.0.1",
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.1",
-    "commit": "60791de6d50ba92633578a3ac70f8527711d84cc"
+    "tag": "v1.0.1",
+    "commit": "193da341992918beb46fc306297548e2db811887"
   },
   "_source": "git://github.com/aglobof/sass.resets.git",
-  "_target": "~0.0.1",
+  "_target": "*",
   "_originalSource": "aglobof-sass.resets"
 }

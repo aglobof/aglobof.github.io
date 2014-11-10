@@ -9,6 +9,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "aglobof-sass": "~0.0.1"
+    "aglobof-sass": "~1.0.2"
   }
 }

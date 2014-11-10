@@ -1,18 +1,24 @@
 # sass.animations
-> A glob of Sass animations.
+> A glob of sass animations.
 
 ## Installation
-```
-bower install aglobof-sass.animations
+
+```shell
+$ bower install aglobof-sass.animations
 ```
  
 ## Usage
  
-Include the partial in your root sass file.
+Include a partial in your root sass file.
 
 ```scss
-// Sass Mixin Includes
-@include '../lib/to/bower/aglobof-sass.animations/animate'
+@import "bower_components/aglobof-sass.animations/animation";
+```
+
+Or, glob all the partials
+
+```scss
+@import "bower_components/aglobof-sass.anitmations/glob";
 ```
  
 Call animations all over the place like a boss
@@ -24,6 +30,6 @@ Call animations all over the place like a boss
 }
 
 .content {
-  @include animation(load-in-slow, initial, 1s, ease-in, 1);
+  @include animation(load-in-slow, 0, 1s, 1, ease-in-out);
 }
 ```

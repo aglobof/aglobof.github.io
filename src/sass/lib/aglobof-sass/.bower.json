@@ -1,6 +1,6 @@
 {
   "name": "aglobof-sass",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "authors": [
     "Robb Schiller <robbschiller@gmail.com>"
   ],
@@ -10,19 +10,19 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "aglobof-sass.resets": "~0.0.1",
-    "aglobof-sass.grid": "~0.1.1",
-    "aglobof-sass.animations": "~0.0.2"
+    "aglobof-sass.resets": "latest",
+    "aglobof-sass.grid": "latest",
+    "aglobof-sass.animations": "latest"
   },
   "homepage": "https://github.com/aglobof/sass",
-  "_release": "0.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.1",
-    "commit": "3258df36e2ea01ccdbd2f9654c439866b2461c3c"
+    "tag": "v1.0.2",
+    "commit": "0ca661c5e29c1d355c5ee35c1e692d070f21437e"
   },
   "_source": "git://github.com/aglobof/sass.git",
-  "_target": "~0.0.1",
+  "_target": "~1.0.2",
   "_originalSource": "aglobof-sass",
   "_direct": true
 }
