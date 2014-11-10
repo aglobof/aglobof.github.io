@@ -1,0 +1,14 @@
+{
+  "name": "glob",
+  "version": "0.0.0",
+  "description": "bower managed packages of sass",
+  "homepage": "aglobof.github.io",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "aglobof-sass": "~1.0.2"
+  }
+}

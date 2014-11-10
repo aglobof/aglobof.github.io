@@ -1,0 +1,17 @@
+{
+  "name": "aglobof-sass",
+  "version": "1.0.1",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "Glob all the sass packages",
+  "keywords": [
+    "scss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "aglobof-sass.resets": "latest",
+    "aglobof-sass.grid": "latest",
+    "aglobof-sass.animations": "latest"
+  }
+}

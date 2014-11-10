@@ -1,0 +1,107 @@
+// Root Sass File
+// ==============
+
+// Import Deps
+// --------------------------------------------------
+// Prototyping some glob stuff here... 
+// --------------------------------------------------
+$grid-break: 768px;
+$grid-gutter-width: 20px;
+@import "lib/aglobof-sass/glob";
+
+// Prototype some design
+// --------------------------------------------------
+// Just trowing some design prototypes under here
+// while some other stuff gets sorted out. Current
+// comp ideas - http://cl.ly/YGq7
+// --------------------------------------------------A
+
+// Colors
+$purple: #9923FF;
+$white: #FFFFFF;
+$black: #3D3D3D;
+$grey: #9A9A9A;
+$light-grey: #F0F0F0;
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: $black;
+  a {
+    @include transition(color, 0.5s);
+  }
+}
+
+.header {
+  padding: 2em 0 3em;
+  .subtitle {
+    padding-bottom: 4px;
+  }
+  .nav {
+    &--link {
+      color: $grey;
+      text-decoration: none;
+      padding: 12px;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro, .resets, .animations, .grids {
+  padding: 4em 0 8em;
+  h2:first-child {
+    margin-top: 10px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+.header {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+}
+
+.nav {
+  @include list-clear-inline;
+}
+
+.resets, .grids {
+  background: $purple;
+  color: $white;
+  .code {
+    background: $white;
+    color: $black;
+  }
+}
+
+.code {
+  font-family: 'Inconsolata', monospace;
+  font-size: 95%;
+  background: $light-grey;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+pre {
+  padding: 15px 10px !important;  
+}

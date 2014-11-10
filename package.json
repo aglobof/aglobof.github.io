@@ -1,0 +1,21 @@
+{
+  "name": "glob-website",
+  "description": "Bower managed packages of Sass",
+  "repository": "git://github.com//aglobof/aglobof.github.io.git",
+  "version": "0.0.0",
+  "main": "build.js",
+  "scripts": {
+    "dev": "node build.js",
+    "deploy": "cd build && git init . && git add . && git commit -m 'deploy'; git push 'git@github.com:aglobof/aglobof.github.io.git' master --force && rm -rf .git/"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "metalsmith": "1.x",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-sass": "^0.4.0",
+    "metalsmith-serve": "0.0.1",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-watch": "^0.1.1"
+  }
+}

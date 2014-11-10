@@ -1,0 +1,23 @@
+{
+  "name": "aglobof-sass.resets",
+  "version": "1.0.1",
+  "homepage": "aglobof.github.io",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "A glob of Sass Resets",
+  "keywords": [
+    "scss",
+    "glob"
+  ],
+  "license": "MIT",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "193da341992918beb46fc306297548e2db811887"
+  },
+  "_source": "git://github.com/aglobof/sass.resets.git",
+  "_target": "*",
+  "_originalSource": "aglobof-sass.resets"
+}

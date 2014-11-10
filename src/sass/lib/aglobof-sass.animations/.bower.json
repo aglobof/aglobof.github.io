@@ -1,0 +1,30 @@
+{
+  "name": "aglobof-sass.animations",
+  "version": "1.0.1",
+  "homepage": "aglobof.github.io",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "Mixin partial for sass animations",
+  "keywords": [
+    "Sass",
+    "Animations"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "14db3d517d9c4b3f087089f82aa39120ec1a5687"
+  },
+  "_source": "git://github.com/aglobof/sass.animations.git",
+  "_target": "*",
+  "_originalSource": "aglobof-sass.animations"
+}

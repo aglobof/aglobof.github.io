@@ -1,0 +1,26 @@
+{
+  "name": "aglobof-sass.grid",
+  "version": "1.0.0",
+  "homepage": "aglobof.github.io",
+  "authors": [
+    "Robb Schiller <robbschiller@gmail.com>"
+  ],
+  "description": "A glob of flexbox grid",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "6832cee8c035473ce96c18a789a79c57b2f90b30"
+  },
+  "_source": "git://github.com/aglobof/sass.grid.git",
+  "_target": "*",
+  "_originalSource": "aglobof-sass.grid"
+}
