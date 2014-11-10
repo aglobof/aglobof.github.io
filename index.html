@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glob</title>
+    <meta name="description" content="Bower managed packages of Sass goodness">
+    <meta charset="utf-8">
+  
+    <!-- Style -->
+    <link href="/css/main.css" type="text/css" rel="stylesheet" media="all">
+  
+    <!-- Type -->
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Glob</div>
+      <div class="subtitle">Bower managed packages of Sass goodness</div>
+      <nav class="nav">
+        <ul>
+          <li><a class="nav--link" href="#resets">Resets</a></li>
+          <li><a class="nav--link" href="#animations">Animations</a></li>
+          <li><a class="nav--link" href="#grid">Grid</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro container">
+        <div class="grid grid--gutters">
+          <div class="grid--item">
+            <p>Glob is designed to be easy to setup with any type of project. It's a collection of modules that give a base set of style to get you up and running incredibly quickly.</p>
+            <p>Every packages contains a <code class="code">_glob.scss</code> file that mimics a globbing technique, so that every package is as simple as it's installation command. Or, just import the files you want without the pseudo-glob.</p>
+          </div>
+          <div class="grid--item">
+            <h2>Installation</h2>
+            <pre class="code">$ bower install aglobof-sass --save</pre>
+            <h2>Usage</h2>
+            <pre class="code">@import "bower_components/aglobof-sass/glob";</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="resets" class="resets">
+        <div class="container">
+          <div class="grid">
+            <div class="grid--item">
+              <h1>Resets</h1>
+            </div>
+          </div>
+          <div class="grid grid--gutters">
+            <div class="grid--item">
+              <p>The Glob resets package does exactly what it sounds. It's a very straight-forward collection of reset tools, giving you normalize, a box model reset and some mixins.</p>
+              <p>The mixins are where it's just a tiny bit trickier, the best way to know what's available is to check the <a href="http://github.com/aglobof/aglobof-sass.resets/">source</a>. There's list clears, clearfixes and some other goods.</p>
+            </div>
+            <div class="grid--item">
+              <h2>Installation</h2>
+              <pre class="code">$ bower install aglobof-sass.resets --save</pre>
+              <h2>Usage</h2>
+              <pre class="code">@import "bower_components/aglobof-sass.resets/glob";</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="animations" class="animations container">
+        <div class="grid">
+          <div class="grid--item">
+            <h1>Animations</h1>
+          </div>
+        </div>
+        <div class="grid grid--gutters">
+          <div class="grid--item">
+            <p>Animations are a critical step in the dance these days, the Glob animations packages exposes some super helpful mixins for keyframe animations, transitions and tranformations.</p>
+            <p>This package is a bit tricky when it comes to implementation, there is a good bit to know about declaring the mixins. Make sure to check out the <a href="http://github.com/aglobof/aglobof-sass.animations">documentation</a> in this packages repo.</p>
+          </div>
+          <div class="grid--item">
+            <h2>Installation</h2>
+            <pre class="code">$ bower install aglobof-sass.animations --save</pre>
+            <h2>Usage</h2>
+            <pre class="code">@import "bower_components/aglobof-sass.animations/glob";</pre>
+          </div>
+        </div>
+      </div>
+      
+      <div id="grid" class="grids">
+        <div class="container">
+          <div class="grid">
+            <div class="grid--item">
+              <h1>Grid</h1>
+            </div>
+          </div>
+          <div class="grid grid--gutters">
+            <div class="grid--item">
+              <p>What's come cool skin without any structure? The Glob packages a flexbox grid for all your IE9+ structuring magic. If you're not familiar with flexbox, you should be.</p>
+              <p>There are two variables that need instantiated for the grid to compile. <code>$grid-break</code> and <code>$grid-gutter-width</code>, once those are in place, you can flexbox away!</p>
+            </div>
+            <div class="grid--item">
+              <h2>Installation</h2>
+              <pre class="code">$ bower install aglobof-sass.grid --save</pre>
+              <h2>Usage</h2>
+              <pre class="code">@import "bower_components/aglobof-sass.grid/glob";</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
