@@ -6,7 +6,7 @@
   "main": "build.js",
   "scripts": {
     "dev": "node build.js",
-    "deploy": "cd build && git init . && git add . && git commit -m 'deploy';  git push 'git@github.com:aglobof/aglobof.github.io.git' master --force && rm -rf .git/"
+    "deploy": "cd build && git init . && git add . && git commit -m 'deploy'; git push 'git@github.com:aglobof/aglobof.github.io.git' master --force && rm -rf .git/"
   },
   "dependencies": {
     "handlebars": "^2.0.0",
