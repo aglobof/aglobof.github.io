@@ -5,7 +5,7 @@
 // --------------------------------------------------
 // Prototyping some glob stuff here... 
 // --------------------------------------------------
-$grid-break: 768px;
+$grid-break: 700px;
 $grid-gutter-width: 20px;
 @import "lib/aglobof-sass/glob";
 
@@ -70,6 +70,32 @@ body {
 .header {
   text-align: center;
   margin: 2em 0;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: darken($purple, 5%);
+  position: fixed;
+  top: 65px;
+  left: 40px;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: lighten($purple, 5%);
+  position: fixed;
+  top: 65px;
+  left: 80px;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 }
 
 .logo {

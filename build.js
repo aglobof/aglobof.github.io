@@ -3,6 +3,7 @@
 var Metalsmith = require('metalsmith');
 var templates = require('metalsmith-templates');
 var sass = require('metalsmith-sass');
+var autoprefixer = require('metalsmith-autoprefixer');
 var markdown = require('metalsmith-markdown');
 var ignore = require('metalsmith-ignore');
 var watch = require('metalsmith-watch');
@@ -12,6 +13,7 @@ var metalsmith = Metalsmith(__dirname)
   .use(sass({
     outputDir: "css/"
   }))
+  .use(autoprefixer())
   .use(markdown())
   .use(templates({
     engine: "handlebars",

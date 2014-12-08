@@ -5,12 +5,13 @@
   "version": "0.0.0",
   "main": "build.js",
   "scripts": {
-    "dev": "node build.js",
+    "start": "node build.js",
     "deploy": "cd build && git init . && git add . && git commit -m 'deploy'; git push 'git@github.com:aglobof/aglobof.github.io.git' master --force && rm -rf .git/"
   },
   "dependencies": {
     "handlebars": "^2.0.0",
     "metalsmith": "1.x",
+    "metalsmith-autoprefixer": "^0.1.2",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-sass": "^0.4.0",
