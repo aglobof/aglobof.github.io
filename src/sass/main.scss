@@ -38,6 +38,7 @@ body {
     padding-bottom: 4px;
   }
   .nav {
+    padding-bottom: 10px;
     &--link {
       color: $grey;
       text-decoration: none;
@@ -46,6 +47,9 @@ body {
         color: $purple;
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1em 20px 1.5em;
   }
 }
 
@@ -64,6 +68,9 @@ body {
   }
   a {
     color: inherit;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 2em 20px 3em;
   }
 }
 
