@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
 }
 
-.intro, .resets, .animations, .grids {
+.intro, .resets, .animations, .utilities, .type {
   padding: 4em 20px 8em;
   h2:first-child {
     margin-top: 10px;
@@ -79,32 +79,6 @@ body {
   margin: 2em 0;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: darken($purple, 5%);
-  position: fixed;
-  top: 65px;
-  left: 40px;
-  @media screen and (max-width: 1100px) {
-    display: none;
-  }
-}
-
-.icon-small {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: lighten($purple, 5%);
-  position: fixed;
-  top: 65px;
-  left: 80px;
-  @media screen and (max-width: 1100px) {
-    display: none;
-  }
-}
-
 .logo {
   font-size: 3rem;
   font-weight: bold;
@@ -118,7 +92,7 @@ body {
   @include list-clear-inline;
 }
 
-.resets, .grids {
+.resets, .utilities {
   background: $purple;
   color: $white;
   .code {
