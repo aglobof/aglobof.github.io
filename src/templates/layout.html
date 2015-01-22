@@ -14,7 +14,7 @@
           <div class="grid--item">
             <h2>Installation</h2>
             <pre class="code">$ bower install aglobof-sass --save</pre>
-            <h2>Usage</h2>
+            <h2>Importation</h2>
             <pre class="code">@import "bower_components/aglobof-sass/glob";</pre>
           </div>
         </div>
@@ -32,12 +32,19 @@
               <h2>About</h2>
               <p>The Glob resets package does exactly what it sounds. It's a very straight-forward collection of reset tools, giving you normalize, a box model reset and some mixins.</p>
               <p>The mixins are where it's just a tiny bit trickier, the best way to know what's available is to check the <a href="http://github.com/aglobof/aglobof-sass.resets/">source</a>. There's list clears, clearfixes and some other goods.</p>
-            </div>
-            <div class="grid--item">
               <h2>Installation</h2>
               <pre class="code">$ bower install aglobof-sass.resets --save</pre>
-              <h2>Usage</h2>
+              <h2>Declaration</h2>
               <pre class="code">@import "bower_components/aglobof-sass.resets/glob";</pre>
+            </div>
+            <div class="grid--item">
+              <h2>Usage</h2>
+              <pre class="code">
+// Import the package
+@import "/the/path/aglobof-sass.resets/glob";
+
+// Party.
+              </pre>
             </div>
           </div>
         </div>
@@ -54,12 +61,31 @@
             <h2>About</h2>
             <p>Animations are a critical step in the dance these days, the Glob animations packages exposes some super helpful mixins for keyframe animations, transitions and tranformations.</p>
             <p>This package is a bit tricky when it comes to implementation, there is a good bit to know about declaring the mixins. Make sure to check out the <a href="http://github.com/aglobof/aglobof-sass.animations">documentation</a> in this packages repo.</p>
-          </div>
-          <div class="grid--item">
             <h2>Installation</h2>
             <pre class="code">$ bower install aglobof-sass.animations --save</pre>
-            <h2>Usage</h2>
+            <h2>Importation</h2>
             <pre class="code">@import "bower_components/aglobof-sass.animations/glob";</pre>
+          </div>
+          <div class="grid--item">
+            <h2>Usage</h2>
+            <pre class="code">
+// Import
+@import "/the/path/aglobof-sass.animations/glob";
+
+// Transition errday
+.div {
+  @include transition(2s);
+}
+
+// Keyframe declaration for animation
+@keyframes animate{
+  0%   {}
+  100% {}
+};
+
+// Animate errday
+
+            </pre>
           </div>
         </div>
       </div>
