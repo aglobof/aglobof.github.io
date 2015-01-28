@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
 }
 
-.intro, .resets, .animations, .utilities, .type {
+.intro, .resets, .animations, .utilities, .type, .footer {
   padding: 4em 20px 8em;
   h2:first-child {
     margin-top: 10px;
@@ -92,7 +92,7 @@ body {
   @include list-clear-inline;
 }
 
-.resets, .utilities {
+.resets, .utilities, .footer {
   background: $purple;
   color: $white;
   .code {
