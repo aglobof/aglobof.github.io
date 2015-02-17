@@ -70,7 +70,7 @@
             <h2>Usage</h2>
             <pre class="code">
 // Import
-@import "/the/path/aglobof-sass.animations/glob";
+@import "/path/to/aglobof-sass.animations/glob";
 
 // Transition errday
 .div {
@@ -78,13 +78,15 @@
 }
 
 // Keyframe declaration for animation
-@keyframes animate{
-  0%   {}
-  100% {}
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 };
 
 // Animate errday
-
+.div {
+  @include animation(fade-in, 1s, ease-in);
+}
             </pre>
           </div>
         </div>
@@ -100,13 +102,28 @@
           <div class="grid grid--gutters">
             <div class="grid--item">
               <h2>About</h2>
-              <p>Utilities are coming soon.</p>
-            </div>
-            <div class="grid--item">
+              <p>Utilities are helper mixins. Different mixins for clearing floats, centering and more. The benefit of using these helpers as mixins is the clarity in your markup. You can import the mixins directly to classes needing them, or import them to clases to use on their own.</p>
               <h2>Installation</h2>
               <pre class="code">$ bower install aglobof-sass.utilities --save</pre>
-              <h2>Usage</h2>
+              <h2>Importation</h2>
               <pre class="code">@import "bower_components/aglobof-sass.utilities/glob";</pre>
+            </div>
+            <div class="grid--item">
+              <h2>Usage</h2>
+              <pre class="code">
+// Import
+@import "../aglobof-sass.utilities/glob";
+
+// Clearfix
+.div {
+  @include clearfix;
+}
+
+// List Clear
+ul {
+  @include list-clear
+}
+              </pre>
             </div>
           </div>
         </div>
@@ -121,13 +138,18 @@
         <div class="grid grid--gutters">
           <div class="grid--item">
             <h2>About</h2>
-            <p>Type is coming soon.</p>
-          </div>
-          <div class="grid--item">
+            <p>The type packages helps you organize and set font, sizing and line-height properties. It's easy to run straight out of the box, and doesn't get in your way if you need lots of customizination.</p>
             <h2>Installation</h2>
             <pre class="code">$ bower install aglobof-sass.type --save</pre>
-            <h2>Usage</h2>
+            <h2>Importation</h2>
             <pre class="code">@import "bower_components/aglobof-sass.type/glob";</pre>
+          </div>
+          <div class="grid--item">
+            <h2>Usage</h2>
+            <pre class="code">
+// Import
+@import "../aglobof-sass.type/glob"
+            </pre>
           </div>
         </div>
       </div>
