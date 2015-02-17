@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glob</title>
+    <meta name="description" content="Bower managed packages of Sass">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Style -->
+    <link href="/css/main.css" type="text/css" rel="stylesheet" media="all">
+  
+    <!-- Type -->
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/glob32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/glob16.png" sizes="16x16" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Glob</div>
+      <div class="subtitle">Packages of Sass mixins</div>
+      <nav class="nav">
+        <ul>
+          <li><a class="nav--link" href="#resets">Resets</a></li>
+          <li><a class="nav--link" href="#animations">Animations</a></li>
+          <li><a class="nav--link" href="#utilities">Utilities</a></li>
+          <li><a class="nav--link" href="#type">Type</a></li>
+        </ul>
+      </nav>
+      <iframe src="http://ghbtns.com/github-btn.html?user=aglobof&repo=sass&type=watch&count=true"  allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=aglobof&repo=sass&type=fork&count=true"  allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+    </header>
+    <main>
+      <div class="intro container">
+        <div class="grid grid--gutters">
+          <div class="grid--item">
+            <h2>About</h2>
+            <p>Glob is designed to be easy to setup with any type of project. It's a collection of modules that give a base set of style to get you up and running incredibly quickly.</p>
+            <p>Every packages contains a <code class="code">_glob.scss</code> file that mimics a globbing technique, so that every package is as simple as it's installation command. Or, just import the files you want without the pseudo-glob.</p>
+          </div>
+          <div class="grid--item">
+            <h2>Installation</h2>
+            <pre class="code">$ bower install aglobof-sass --save</pre>
+            <h2>Importation</h2>
+            <pre class="code">@import "bower_components/aglobof-sass/glob";</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="resets" class="resets">
+        <div class="container">
+          <div class="grid">
+            <div class="grid--item">
+              <h1>Resets</h1>
+            </div>
+          </div>
+          <div class="grid grid--gutters">
+            <div class="grid--item">
+              <h2>About</h2>
+              <p>The Glob resets package does exactly what it sounds. It's a very straight-forward collection of reset tools, giving you normalize, a box model reset and some mixins.</p>
+              <p>The mixins are where it's just a tiny bit trickier, the best way to know what's available is to check the <a href="http://github.com/aglobof/aglobof-sass.resets/">source</a>. There's list clears, clearfixes and some other goods.</p>
+              <h2>Installation</h2>
+              <pre class="code">$ bower install aglobof-sass.resets --save</pre>
+              <h2>Declaration</h2>
+              <pre class="code">@import "bower_components/aglobof-sass.resets/glob";</pre>
+            </div>
+            <div class="grid--item">
+              <h2>Usage</h2>
+              <pre class="code">
+// Import the package
+@import "/the/path/aglobof-sass.resets/glob";
+
+// Party.
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="animations" class="animations container">
+        <div class="grid">
+          <div class="grid--item">
+            <h1>Animations</h1>
+          </div>
+        </div>
+        <div class="grid grid--gutters">
+          <div class="grid--item">
+            <h2>About</h2>
+            <p>Animations are a critical step in the dance these days, the Glob animations packages exposes some super helpful mixins for keyframe animations, transitions and tranformations.</p>
+            <p>This package is a bit tricky when it comes to implementation, there is a good bit to know about declaring the mixins. Make sure to check out the <a href="http://github.com/aglobof/aglobof-sass.animations">documentation</a> in this packages repo.</p>
+            <h2>Installation</h2>
+            <pre class="code">$ bower install aglobof-sass.animations --save</pre>
+            <h2>Importation</h2>
+            <pre class="code">@import "bower_components/aglobof-sass.animations/glob";</pre>
+          </div>
+          <div class="grid--item">
+            <h2>Usage</h2>
+            <pre class="code">
+// Import
+@import "/path/to/aglobof-sass.animations/glob";
+
+// Transition errday
+.div {
+  @include transition(2s);
+}
+
+// Keyframe declaration for animation
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+};
+
+// Animate errday
+.div {
+  @include animation(fade-in, 1s, ease-in);
+}
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="utilities" class="utilities">
+        <div class="container">
+          <div class="grid">
+            <div class="grid--item">
+              <h1>Utilities</h1>
+            </div>
+          </div>
+          <div class="grid grid--gutters">
+            <div class="grid--item">
+              <h2>About</h2>
+              <p>Utilities are helper mixins. Different mixins for clearing floats, centering and more. The benefit of using these helpers as mixins is the clarity in your markup. You can import the mixins directly to classes needing them, or import them to clases to use on their own.</p>
+              <h2>Installation</h2>
+              <pre class="code">$ bower install aglobof-sass.utilities --save</pre>
+              <h2>Importation</h2>
+              <pre class="code">@import "bower_components/aglobof-sass.utilities/glob";</pre>
+            </div>
+            <div class="grid--item">
+              <h2>Usage</h2>
+              <pre class="code">
+// Import
+@import "../aglobof-sass.utilities/glob";
+
+// Clearfix
+.div {
+  @include clearfix;
+}
+
+// List Clear
+ul {
+  @include list-clear
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="type" class="type container">
+        <div class="grid">
+          <div class="grid--item">
+            <h1>Type</h1>
+          </div>
+        </div>
+        <div class="grid grid--gutters">
+          <div class="grid--item">
+            <h2>About</h2>
+            <p>The type packages helps you organize and set font, sizing and line-height properties. It's easy to run straight out of the box, and doesn't get in your way if you need lots of customizination.</p>
+            <h2>Installation</h2>
+            <pre class="code">$ bower install aglobof-sass.type --save</pre>
+            <h2>Importation</h2>
+            <pre class="code">@import "bower_components/aglobof-sass.type/glob";</pre>
+          </div>
+          <div class="grid--item">
+            <h2>Usage</h2>
+            <pre class="code">
+// Import
+@import "../aglobof-sass.type/glob"
+            </pre>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="http://twitter.com/aglobof">Twitter</a> | <a href="http://github.com/aglobof">Github</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
